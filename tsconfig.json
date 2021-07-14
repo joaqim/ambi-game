@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "noImplicitAny": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@ecs": ["ecs"],
+      "@game": ["game"],
+      "@utils": ["utils"],
+      "@settings": ["settings"],
+      "@grid": ["grid"],
+      "@node": ["node"]
+    },
+    "types": ["jest", "reflect-metadata"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
